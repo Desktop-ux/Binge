@@ -3,7 +3,7 @@ import hero from '../src/assets/hero-img.png'
 import Search from './Components/Search.jsx'
 import Spinner from './Components/Spinner.jsx'
 import MovieCard from './Components/MovieCard.jsx'
-import { useDebounce } from 'react-use'
+
 import {UpdateSearchCount, getTrendingMovies} from '../src/Appwrite.js'
 
 const API_BASE_URL = 'https://api.themoviedb.org/3'
@@ -24,7 +24,7 @@ const App = () => {
   const [ErrorMessage, setErrorMessage] = useState("")
   const [MovieList, setMovieList] = useState([])
   const [IsLoading, setIsloading] = useState(false)
-  const [DebounceSearchTerm, setDebounceSearchTerm] = useState("")
+  // const [DebounceSearchTerm, setDebounceSearchTerm] = useState("")
   const [TrendingMovies, setTrendingMovies] = useState([])
 
 
